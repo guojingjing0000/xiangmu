@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../css/tuichibaodao.css" />
+		<link rel="stylesheet" type="text/css" href="../css/FortAwesome/css/font-awesome.min.css" />
+		<script type="text/javascript" src="../js/rem.js"></script>
+		<title></title>
+	</head>
+
+	<body>
+		<div class="gz-t-box">
+			<div class="gz-t-header">
+				<p><span><a  href="../index.html#/shouye"><</a></span><span>推迟报到</span></p>
+			</div>
+			<div class="gz-t-tw">
+				<p><img src="../images/self-report.png"></p>
+				<p><span>申请状态:</span>
+					<span><img src="../images/register-in.png"></span>
+					<span>审核通过</span></p>
+				<p><span>推迟报到类型</span>
+					<span><input type="text" placeholder="请填写"/></span>
+				</p>
+				<p class="nav"><span class="active">个人申请信息</span>
+					<span>申请原因</span></p>
+				<div class="gz-t-xx a" style="display: block;">
+					<p><span>姓名:</span>
+						<span><input type="text"  id="name"   placeholder="请输入你的姓名"></span  ><span  id="n"></span>
+					</p>
+					<p><span>考生号:</span>
+						<span><input type="text"   id="name1"  placeholder="请输入你的考生号"></span><span   id="n1"></span>
+					</p>
+					<p><span>学院:</span>
+						<span><input type="text" id="name2"   placeholder="请输入你所在的学院"></span><span   id="n2"></span>
+					</p>
+					<p><span>专业:</span>
+						<span><input type="text"   id="name3"  placeholder="请输入你的专业"></span><span   id="n3"></span>
+					</p>
+					<p><span>身份证号:</span>
+						<span><input type="text"  id="name4"  placeholder="请输入你的身份证号"></span><span   id="n4"></span>
+					</p>
+					<p><span>推迟报到:</span>
+						<span><input type="text"  id="name5"  placeholder="请输入时间"></span><span   id="n5"></span>
+					</p>
+
+				</div>
+				<div class="gz-t-xx2 a">
+					<textarea>请您在此输入你的申请原因，以便通过审核</textarea>
+				</div>
+				<p class="pBtn"><button class="tj"><a style="color: white;" href="tijiaochenggong.html">提交</a></button></p>
+
+			</div>
+		</div>
+		<script src="../js/jquery.3.1.1.js"></script>
+		<script>
+			$(function() {
+				$(".nav span").click(function() {
+					$ind = $(this).index();
+					$(this).addClass("active");
+					$(this).siblings("span").removeClass("active");
+					$(".a").eq($ind).show();
+					$(".a").eq($ind).siblings(".a").hide()
+				})
+
+				$(".tj").click(() => {
+					if($("input[type=text]").val() == "") {
+						alert("信息不能为空，请输入");
+
+						return false;
+					} else {
+
+					}
+				})
+
+				//判断姓名
+
+				$("#name").blur(function() {
+					var reg = /^[\w]{8,16}$/g;
+					if($("#name").val() == "") {
+						$("#n").html("不能输入为空");
+
+					} else if(!reg.test($("#name").val())) {
+						$("#n").html("昵称格式错误").css("color", "red")
+					} else {
+						$("#n").html("昵称输入正确").css("color", "green")
+					}
+				})
+				
+				
+					$("#name1").blur(function() {
+					
+					if($("#name1").val() == "") {
+						$("#n1").html("不能输入为空");
+
+					}  else {
+						$("#n1").html("输入正确").css("color", "green")
+					}
+				})
+					
+					$("#name2").blur(function() {
+					
+					if($("#name2").val() == "") {
+						$("#n2").html("不能输入为空");
+
+					}  else {
+						$("#n2").html("输入正确").css("color", "green")
+					}
+				})
+					
+					
+					
+					$("#name3").blur(function() {
+					
+					if($("#name3").val() == "") {
+						$("#n3").html("不能输入为空");
+
+					}  else {
+						$("#n3").html("输入正确").css("color", "green")
+					}
+				})
+					
+					
+					
+					$("#name4").blur(function() {
+					
+					if($("#name4").val() == "") {
+						$("#n4").html("不能输入为空");
+
+					}  else {
+						$("#n4").html("输入正确").css("color", "green")
+					}
+				})
+					
+					
+					$("#name5").blur(function() {
+					
+					if($("#name5").val() == "") {
+						$("#n5").html("不能输入为空");
+
+					}  else {
+						$("#n5").html("昵称输入正确").css("color", "green")
+					}
+				})
+			})
+		</script>
+
+	</body>
+
+</html>

@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  background: #ededed; }
+
+.lr-div1 {
+  width: 94%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  padding: 3%;
+  background: #45bff7;
+  color: white;
+  font-family: 'microsoft yahei',Verdana,Arial,Helvetica,sans-serif; }
+
+.lr-div2 {
+  width: 100%; }
+  .lr-div2 > img {
+    width: 100%; }
+
+.lr-div3 {
+  width: 100%; }
+  .lr-div3 > div {
+    margin: 2%;
+    background: white; }
+    .lr-div3 > div > div {
+      font-size: 0.8rem; }
+      .lr-div3 > div > div p {
+        padding: 1%; }
+
+/*# sourceMappingURL=ruxuexuzhi.css.map */

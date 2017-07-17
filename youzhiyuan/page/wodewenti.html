@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>我的问题</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../css/wodewenti.css" />
+		<link rel="stylesheet" type="text/css" href="../css/FortAwesome/css/font-awesome.css" />
+			<script type="text/javascript"  src="../js/rem.js"></script>
+
+	</head>
+
+	<body>
+
+		<div class="gz-wd-header">
+
+			<div>
+				<a href="../index.html#/zixun" style="color:white">&lt;</a>
+			</div>
+			<div>
+				<p>我的问题</p>
+			</div>
+			<div></div>
+
+		</div>
+
+		<div class="gz-wd-nav">
+			<img src="../images/self-report.png" />
+		</div>
+
+		<div class="gz-wd-xian">
+
+		</div>
+
+		<section class="list">
+			<ul class="list-ul">
+				<li id="li" class="list-li">
+					<div class="con">
+						<span><i class="fa fa-commenting   " style="color:#10AEFF" aria-hidden="true" ></i></span>
+						<span style="color:gray">怎样才能申请助学贷款？</span>
+						<span>2016-08-25</span>
+					</div>
+					<div class="btn">删除</div>
+				</li>
+				<li class="list-li">
+					<div class="con">
+						<span><i class="fa fa-commenting  " style="color:#10AEFF" aria-hidden="true" ></i></span>
+						<span>怎样才能申请助学贷款？</span>
+						<span>2016-08-25</span>
+					</div>
+					<div class="btn">删除</div>
+				</li>
+				<li class="list-li">
+					<div class="con">
+						<span><i class="fa fa-commenting   " style="color:#10AEFF" aria-hidden="true" ></i></span>
+						<span>怎样才能申请助学贷款？</span>
+						<span>2016-08-25</span>
+					</div>
+					<div class="btn">删除</div>
+				</li>
+				<li class="list-li">
+					<div class="con">
+						<span><i class="fa fa-commenting " style="color:#10AEFF" aria-hidden="true" ></i></span>
+						<span>怎样才能申请助学贷款？</span>
+						<span>2016-08-25</span>
+					</div>
+					<div class="btn">删除</div>
+				</li>
+			</ul>
+		</section>
+	
+	</body>
+	<script type="text/javascript" src="../js/zepto.js"></script>
+	<script type="text/javascript" src="../js/zepto.touchWipe.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$('.list-li').touchWipe({
+				itemDelete: '.btn'
+			});
+			$(".btn").on('touchend', function(event) {
+				event.preventDefault();
+				event.target.parentNode.remove();
+			})
+		});
+	</script>
+
+</html>

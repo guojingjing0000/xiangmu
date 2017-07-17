@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-family: 'microsoft yahei',Verdana,Arial,Helvetica,sans-serif; }
+
+.lgg-div1 {
+  width: 94%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  padding: 3%;
+  background: #45bff7;
+  color: white; }
+
+.lgg-div2 {
+  width: 100%; }
+  .lgg-div2 > img {
+    width: 100%; }
+
+.lgg-div3 {
+  width: 92%;
+  padding: 0% 4%; }
+  .lgg-div3 > div {
+    width: 100%;
+    font-size: 0.8rem; }
+
+/*# sourceMappingURL=gonggaoxiangqing.css.map */

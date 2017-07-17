@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/FortAwesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../css/xiugaimima.css">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          	<script type="text/javascript"  src="../js/rem.js"></script>
+</head>
+<body>
+<div class="lx-div1">
+    <div><a href="../index.html#/zhongxin" style="text-decoration: none;color: white;"> &lt; </a></div>
+    <div>
+        <p>修改密码</p>
+    </div>
+    <div></div>
+</div>
+<div class="lx-div2">
+    <ul>
+        <li>
+            <input type="password" placeholder="旧密码">
+        </li>
+        <li>
+            <input type="password"  id="mi1" placeholder="新密码"><span ></span>
+        </li>
+        <li>
+            <input type="password"  id="mi2" placeholder="确认密码"><span></span>
+        </li>
+    </ul>
+</div>
+<div class="lx-div3">
+    <a href="gaimichenggong.html"   class="tj">提交</a>
+</div>
+</body>
+<script  src="../js/jquery.3.1.1.js"></script>
+<script>
+$(function(){
+
+
+	$(".tj").click(()=>{
+				if($("input[type=password]").val()==""){
+					alert("不能为空，请输入相应信息");
+					
+					return false;
+				}
+				})
+	
+	
+	var span=document.getElementsByTagName("span");
+	var mi1=document.getElementById("mi1");
+    mi1.onblur=function(){
+        var reg=/^[\w\.]{6,12}$/g;
+        if(mi1.value==""){
+            span[0].innerHTML="密码不能为空";
+            span[0].style.color="red";
+        }else if(!reg.test(mi1.value)){
+            span[0].innerHTML="密码格式错误";
+            span[0].style.color="red";
+        }else{
+            span[0].innerHTML="密码输入正确";
+            span[0].style.color="green";
+        }
+    }
+    //验证确认密码
+    var mi2=document.getElementById("mi2");
+    mi2.onblur=function(){
+
+        if(mi1.value!=mi2.value){
+            span[1].innerHTML="密码不一致";
+             span[1].style.color="red";
+             
+             
+             $(".tj").click(()=>{
+				
+					alert("两次密码不一样，请重新输入")
+			
+					return false;
+					
+				})
+             
+        }else if(mi1.value=mi2.value){
+            span[1].innerHTML="密码正确";
+            span[1].style.color="green";
+           
+        }
+    }
+    
+    
+}
+)
+		
+		
+	
+
+</script>
+
+</html>

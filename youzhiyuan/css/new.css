@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+html {
+  font-family: 'microsoft yahei',Verdana,Arial,Helvetica,sans-serif; }
+
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background: #f0f0f0;
+  padding: 2% 0;
+  border-top: 1px solid #45bff7; }
+  footer > ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1rem; }
+    footer > ul > li > a {
+      text-decoration: none;
+      color: #808080; }
+      footer > ul > li > a > i {
+        color: #808080;
+        margin-bottom: 8.5%;
+        align-items: baseline; }
+      footer > ul > li > a > p {
+        font-size: 0.8rem; }
+
+/*# sourceMappingURL=new.css.map */

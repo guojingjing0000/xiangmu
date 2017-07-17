@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+html {
+  font-size: 62.5%;
+  font-family: 'microsoft yahei',Verdana,Arial,Helvetica,sans-serif; }
+  html a {
+    text-decoration: none; }
+
+.gz-bd-header {
+  width: 94%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  padding: 3%;
+  background: #45bff7;
+  color: white; }
+
+.gz-bd-nav {
+  width: 100%;
+  margin-top: -3px; }
+  .gz-bd-nav > img {
+    width: 100%; }
+
+.gz-bd-img {
+  width: 100%; }
+  .gz-bd-img > img {
+    width: 100%; }
+
+.gz-bd-div1 {
+  margin-top: 2%;
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid gainsboro; }
+  .gz-bd-div1 > div:nth-child(1) {
+    width: 54%;
+    display: flex; }
+    .gz-bd-div1 > div:nth-child(1) > img {
+      width: 50%;
+      vertical-align: middle; }
+    .gz-bd-div1 > div:nth-child(1) > div {
+      width: 30%;
+      padding: 20% 0; }
+      .gz-bd-div1 > div:nth-child(1) > div > p {
+        font-size: 0.8rem; }
+  .gz-bd-div1 > div:nth-child(2) {
+    width: 60%;
+    text-align: center;
+    padding: 1% 0; }
+    .gz-bd-div1 > div:nth-child(2) > img {
+      width: 90%; }
+
+.gz-bd-div2 {
+  width: 100%;
+  display: flex;
+  padding: 5% 0;
+  border-bottom: 1px solid gainsboro; }
+  .gz-bd-div2 > p:nth-child(1) {
+    width: 1%;
+    padding: 3% 0;
+    background: lightblue; }
+  .gz-bd-div2 > p:nth-child(2) {
+    width: 50%;
+    padding: 1% 0 0 2%;
+    font-size: 0.8rem; }
+
+.gz-bd-div3 {
+  width: 100%;
+  display: flex;
+  padding: 5% 0;
+  font-size: 0.8rem;
+  border-bottom: 1px solid gainsboro; }
+  .gz-bd-div3 > p:nth-child(1) {
+    width: 20%;
+    text-align: right;
+    padding-right: 4%;
+    border-right: 1px solid gainsboro; }
+  .gz-bd-div3 > p:nth-child(2) {
+    color: grey;
+    width: 70%;
+    text-align: right; }
+
+.gz-bd-ul {
+  width: 100%;
+  display: flex;
+  padding: 3% 0;
+  background: #F5F5F5;
+  font-size: 0.8rem; }
+  .gz-bd-ul > li {
+    width: 33%;
+    text-align: center; }
+
+.gz-bd-ul2 {
+  width: 100%;
+  display: flex;
+  padding: 3% 0;
+  font-size: 0.8rem;
+  border-bottom: 1px solid gainsboro; }
+  .gz-bd-ul2 > li {
+    width: 33%;
+    text-align: center; }
+
+.gz-bd-btn {
+  width: 90%;
+  margin: 7% 4% 3%;
+  text-align: center;
+  padding: 3% 0;
+  border: 1px solid #00A7EE;
+  color: #00A7EE;
+  background: white;
+  font-size: 0.8rem; }
+
+.gz-bd-btn1 {
+  width: 90%;
+  margin: 3% 4%;
+  text-align: center;
+  padding: 3% 0;
+  border: 1px solid white;
+  color: white;
+  background: #00A7EE;
+  font-size: 0.8rem; }
+
+/*# sourceMappingURL=baodaodan.css.map */

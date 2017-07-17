@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>抵校登记</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../css/dixiaodengji.css" />
+		<link rel="stylesheet" type="text/css" href="../css/FortAwesome/css/font-awesome.css" />
+		<script type="text/javascript"  src="../js/rem.js"></script>
+		
+	</head>
+
+	<body>
+		<div class="gz-dx-header">
+
+			<div>
+				<a href="../index.html#/shouye" style="color:white">&lt;</a>
+			</div>
+			<div>
+				<p>抵校登记</p>
+			</div>
+			<div></div>
+
+		</div>
+
+		<div class="gz-dx-nav">
+			<img src="../images/self-report.png" />
+		</div>
+
+		<div class="gz-dx-img">
+			<img src="../images/2017-06-13_202514.jpg" />
+		</div>
+
+		<div class="gz-dx-div">
+			<p>交通方式</p>
+			<p>
+				
+				<select     style=" color:grey" >
+					<option >请选择您到达学校的交通工具</option>
+					<option>自驾车</option>
+					<option>出租车</option>
+					<option>校车</option>
+					<option>公交车</option>
+					<option>步行</option>
+					
+				</select>
+			
+			</p>
+			<p></p>
+		</div>
+
+		<div class="gz-dx-div">
+			<p>接站站点</p>
+			<p>
+				
+				<select   style=" color:grey">
+					<option>请选择您目的地的站点位置</option>
+					<option>东校区</option>
+					<option>西校区</option>
+				</select>
+			</p>
+			<p></p>
+		</div>
+
+		<div class="gz-dx-div">
+			<p>出发时间</p>
+			<p><input  type="text"   id="name" placeholder="请填写你的出发时间"   style="color:grey;outline: none;border: none;"/>
+			</p>
+			<p  id="n"></p>
+		</div>
+
+		<div class="gz-dx-div">
+			<p>到达时间</p>
+			<p>
+				
+				<input  type="text"  id="name1" placeholder="请填写您的预计到达时间"   style="color:grey;outline: none;border: none;"/>
+			</p>
+			<p  id="n1"></p>
+		</div>
+
+		<div class="gz-dx-div">
+			<p>是否陪同</p>
+			<p>
+			     <select     style=" color:gray">
+					<option>请选择是否有人陪同</option>
+					<option>是</option>
+					<option>否</option>
+				</select>
+			
+			</p>
+			<p></p>
+		</div>
+
+		<div class="gz-dx-div">
+			<p>陪同人数</p>
+			<p>
+			<input  type="text"  id="name2"  placeholder="请填写您的陪同人数"   style="color:grey;outline: none;border: none;"/>
+			
+			
+			
+			
+			</p>
+			<p   id="n2"></p>
+		</div>
+
+		<div class="gz-dx-btn">
+			<div>
+				<a href="susheyuding.html"  >上一步</a>
+			</div>
+			<div>
+				<a href="baodaodan.html"   class="next">下一步</a>
+			</div>
+		</div>
+
+	</body>
+<script  src="../js/jquery.3.1.1.js"></script>
+
+<script>
+	
+	$("#name").blur(function() {
+					
+					if($("#name").val() == "") {
+						$("#n").html("不能输入为空");
+
+					}  else {
+						$("#n").html("输入正确").css("color", "green")
+					}
+				})
+	$("#name1").blur(function() {
+					
+					if($("#name1").val() == "") {
+						$("#n1").html("不能输入为空");
+
+					}  else {
+						$("#n1").html("输入正确").css("color", "green")
+					}
+				})
+	$("#name2").blur(function() {
+					
+					if($("#name2").val() == "") {
+						$("#n2").html("不能输入为空");
+
+					}  else {
+						$("#n2").html("输入正确").css("color", "green")
+					}
+				})
+
+
+$(".next").click(()=>{
+				if($("input").val()==""){
+					alert("不能为空，请输入相应信息");
+					
+					return false;
+				}
+				})
+
+
+
+</script>
+</html>

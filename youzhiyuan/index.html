@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Title</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<script src="./js/jquery.3.1.1.js"></script>
+		<script src="./js/angular-1.4.6.min.js"></script>
+		<script src="./js/angular-route.min.js"></script>
+		<script src="js/rem.js"></script>
+		<link rel="stylesheet" type="text/css" href="./css/FortAwesome/css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="./css/new.css">
+
+		<link rel="stylesheet" type="text/css" href="./css/zixunbangzhu.css">
+		<link rel="stylesheet" type="text/css" href="./css/zizhuruxue.css">
+		<link rel="stylesheet" type="text/css" href="./css/gerenzhongxin.css">
+		<link rel="stylesheet" type="text/css" href="./css/shouye.css" />
+
+		<style>
+			.on {
+				color: #00A6EF;
+			}
+		</style>
+	</head>
+
+	<body>
+		<ng-view></ng-view>
+		<div style="padding: 3% 0;"></div>
+		<footer>
+			<ul>
+				<li>
+					<a href="#shouye" class="on">
+						<p class="fa fa-envelope-open-o fa-1x" aria-hidden="true" style="margin-bottom: 15%;"></p>
+
+						<p>首页</p>
+					</a>
+				</li>
+				<li>
+					<a href="#zizhu">
+						<p class="fa fa-weixin fa-1x" aria-hidden="true"></p>
+						<p>自助入学</p>
+					</a>
+				</li>
+				<li>
+					<a href="#zixun">
+						<p class="fa fa-commenting fa-1x" aria-hidden="true"></p>
+						<p>咨询帮助</p>
+					</a>
+				</li>
+				<li>
+					<a href="#zhongxin">
+						<p class="fa fa-user-circle  fa-1x" aria-hidden="true"></p>
+						<p>个人中心</p>
+					</a>
+				</li>
+			</ul>
+		</footer>
+	</body>
+
+	<script>
+		var app = angular.module("myApp", ['ngRoute'])
+		app.config(function($routeProvider, $locationProvider) {
+			$locationProvider.hashPrefix('')
+			$routeProvider
+				.when("/shouye", {
+					templateUrl: "./page/shouye.html"
+						//                    template:"123"
+
+				})
+				.when("/zizhu", {
+					templateUrl: "./page/zizhuruxue.html"
+						//                    template:"456"
+				})
+				.when("/zixun", {
+					templateUrl: "./page/zixunbangzhu.html"
+						//                    template:"456"
+				})
+				.when("/zhongxin", {
+					templateUrl: "./page/gerenzhongxin.html"
+						//                    template:"456"
+				})
+				.otherwise({
+					redirectTo: "/shouye"
+				})
+		})
+
+		
+
+		$("footer ul li a").click(function() {
+			$(this).addClass("on").parent().siblings().children().removeClass("on")
+		});
+	</script>
+
+</html>

@@ -1,0 +1,143 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+html{
+  font-family: 'microsoft yahei',Verdana,Arial,Helvetica,sans-serif;
+font-size: 62.5%;
+
+}
+
+.ls-div1{
+  width:100%;
+  display: flex;
+  justify-content:space-around;
+  background: #45bff7;
+  font-size:1rem;
+  color: white;
+  div{
+    padding:2.5% 0;
+  }
+}
+.ls-div2{
+  width:100%;
+  >img{
+    width:100%;
+  }
+}
+.ls-div3{
+  width:100%;
+  >ul{
+    width:100%;
+    display: flex;
+    justify-content:space-around;
+    text-align: center;
+    flex-wrap: wrap;
+    >li{
+      margin-bottom:2%;
+      width:25%;
+      a{
+        text-decoration: none;
+        color: #000;
+        p{
+          font-size: 0.8rem;
+          font-weight: 500;
+        }
+        img{
+          width:70%;
+        }
+      }
+    }
+  }
+}
+.ls-div4{
+  width:100%;
+  font-size: 0.9rem;
+  margin:7% 0;
+  >div:nth-child(1){
+    width:100%;
+    border-bottom: 1px solid #dcdcdc;
+    p{
+      width:20%;
+      text-align: center;
+      border-left:10px solid #45bff7;
+      margin-bottom:2%;
+    }
+  }
+  >div:nth-child(2){
+    width:94%;
+    margin:3% 2%;
+    display: flex;
+    >div:nth-child(1){
+      width: 40%;
+      >img{
+        width:93%;
+      }
+    }
+    >div:nth-child(2){
+      width:58%;
+      font-size: 0.8rem;
+    }
+
+  }
+}
+.ls-div5{
+  width:100%;
+  font-size: 0.9rem;
+  margin:7% 0;
+  >div:nth-child(1){
+    width:100%;
+    border-bottom: 1px solid #dcdcdc;
+    p{
+      width:20%;
+      text-align: center;
+      border-left:10px solid #45bff7;
+      margin-bottom:2%;
+    }
+  }
+  >div:nth-child(2){
+    width:94%;
+    margin:3% 2%;
+    display: flex;
+    >div:nth-child(1){
+      width: 40%;
+      >img{
+        width:93%;
+      }
+    }
+    >div:nth-child(2){
+      width:58%;
+      font-size: 0.8rem;
+      >span{
+        color: #ccc;
+      }
+    }
+
+  }
+}
+.ls-div6{
+  width:100%;
+  font-size: 0.15rem;
+  margin:7% 0;
+  border-top:1px solid #dcdcdc;
+  >div:nth-child(1){
+    width:94%;
+    margin:3% 2%;
+    display: flex;
+    >div:nth-child(1){
+      width: 40%;
+      >img{
+        width:93%;
+      }
+    }
+    >div:nth-child(2){
+      width:58%;
+      font-size: 0.8rem;
+      >span{
+        color: #ccc;
+      }
+    }
+
+  }
+}

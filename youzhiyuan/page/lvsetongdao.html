@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../css/lvsetongdao.css" />
+		<script type="text/javascript" src="../js/rem.js"></script>
+
+		<title></title>
+	</head>
+
+	<body>
+		<div class="gz-t-box2">
+			<div class="gz-t-header">
+				<p><span><a  href="../index.html#/shouye"><</a></span><span>绿色通道</span></p>
+			</div>
+			<div class="gz-t-tw">
+				<p><img src="../images/self-report.png"></p>
+				<p><span>申请状态:</span><span><img src="../images/register-in.png"></span><span>审核通过</span></p>
+				<p><span>申请类型</span><span><input type="text"  style="outline: none;  border:none;"    placeholder="请填写申请类型"/></span></p>
+				<p class="nav">
+					<span class="active">个人信息</span>
+					<span>家庭情况</span>
+					<span>申请原因</span>
+					<span>证明材料</span>
+				</p>
+				<div class="gz-l-xx b" style="display: block;">
+					<p>
+						<span>姓名</span>
+						<span><input type="text" placeholder="请输入姓名"/>
+			    	   <input type="radio" name="sex" checked="checked">男
+			    	   	<input type="radio" name="sex">女</span>
+
+					</p>
+					<p>
+						<span>民族</span>
+						<span><input type="text"   placeholder="请填写您的民族类别"/> <i></i></span>
+					</p>
+					<p>
+						<span>手机</span>
+						<span><input type="text"  id="telephone" placeholder="请填写您的个人手机号码"/><i id="s"></i></span>
+					</p>
+					<p>
+						<span>出生年月</span>
+						<span><input type="text" placeholder="请填写您的出生日期"/></span>
+					</p>
+					<p>
+						<span>身份证号</span>
+						<span><input type="text"   id="sfz"   placeholder="请填写您的身份证号码"/><i id="id"></i></span>
+					</p>
+					<p>
+						<span>联系手机</span>
+						<span><input type="text" placeholder="请填写您的手机联系号码"/></span>
+					</p>
+					<p>
+						<span>户籍类型</span>
+						<span><input type="text" placeholder="请选择您的户籍类型"/><span></span></span>
+
+					</p>
+					<p>
+						<span>政治面貌</span>
+						<span><input type="text" placeholder="请选择您的政治面貌"/><span></span></span>
+
+					</p>
+					<p>
+						<span>居住地址</span>
+						<span><input type="text" placeholder="请所在地地址"/><span></span></span>
+
+					</p>
+					<p>
+						<span>详细地址</span>
+						<span><input type="text" placeholder="请填写您的详细地址"/></span>
+					</p>
+				</div>
+				<div class="gz-l-xx2 b">
+					<div class="gz-l-cy">
+						<p>
+							<span>家庭成员1</span>
+							<span><input type="text" placeholder="请填写您家庭成员1的姓名"/></span>
+						</p>
+						<p>
+							<span>关系</span>
+							<span><input type="text" placeholder="请填写您与家庭成员1的关系"/></span>
+						</p>
+						<p>
+							<span>工作单位</span>
+							<span><input type="text" placeholder="请填写家庭成员1的工作单位"/></span>
+						</p>
+						<p>
+							<span>年收入</span>
+							<span><input type="text" placeholder="请填写您家庭成员1的年收入情况"/></span>
+						</p>
+					</div>
+					<div class="gz-l-cy">
+						<p>
+							<span>家庭成员2</span>
+							<span><input type="text" placeholder="请填写您家庭成员1的姓名"/></span>
+						</p>
+						<p>
+							<span>关系</span>
+							<span><input type="text" placeholder="请填写您与家庭成员1的关系"/></span>
+						</p>
+						<p>
+							<span>工作单位</span>
+							<span><input type="text" placeholder="请填写家庭成员1的工作单位"/></span>
+						</p>
+						<p>
+							<span>年收入</span>
+							<span><input type="text" placeholder="请填写您家庭成员1的年收入情况"/></span>
+						</p>
+					</div>
+					<div class="gz-l-cy">
+						<p>
+							<span>家庭成员3</span>
+							<span><input type="text" placeholder="请填写您家庭成员1的姓名"/></span>
+						</p>
+						<p>
+							<span>关系</span>
+							<span><input type="text" placeholder="请填写您与家庭成员1的关系"/></span>
+						</p>
+						<p>
+							<span>工作单位</span>
+							<span><input type="text" placeholder="请填写家庭成员1的工作单位"/></span>
+						</p>
+						<p>
+							<span>年收入</span>
+							<span><input type="text" placeholder="请填写您家庭成员1的年收入情况"/></span>
+						</p>
+					</div>
+
+				</div>
+				<div class="gz-l-xx3 b">
+					<p>
+						<textarea style="font-size:0.18rem;color: gray;">请在此输入您的申请原因，以便通过审核</textarea>
+					</p>
+				</div>
+				<div class="gz-l-xx4 b">
+					<p>
+
+						<form id="imgForm">
+							<input type="file" class="addBorder" style="opacity: 0;">
+
+							<br/>
+							<span onclick="loadImg()">上传图片</span>
+						</form>
+
+						<div class="addBorder" id="imgDiv">
+							<img id="imgContent" style="width: 100px;height: 100px;">
+
+						</div>
+					</p>
+
+				</div>
+				<p class="tjBtn"><button class="tj"><a style="color: white;" href="tijiaochenggong.html">提交</a></button></p>
+			</div>
+		</div>
+		<script src="../js/jquery.3.1.1.js"></script>
+
+		<script>
+			$(function() {
+				$(".nav span").click(function() {
+					$ind = $(this).index();
+					$(this).addClass("active")
+					$(this).siblings("span").removeClass("active")
+					$(".b").eq($ind).show();
+					$(".b").eq($ind).siblings(".b").hide()
+				});
+	$("input[type=text]").blur(function() {
+				var reg = /^1\d{10}$/;
+				if($("#telephone").val() == "") {
+					$("i").html("不能输入为空");
+
+				}else {
+					$("i").html("输入正确").css("color", "green")
+				}
+			})
+				$(".tj").click(() => {
+					if($("input[type=text]").val() == "") {
+						alert("信息不能为空，请输入");
+
+						return false;
+					} else {
+
+					}
+				})
+
+			})
+			$("#telephone").blur(function() {
+				var reg = /^1\d{10}$/;
+				if($("#telephone").val() == "") {
+					$("#s").html("不能输入为空");
+
+				} else if(!reg.test($("#telphone").val())) {
+					$("#s").html("格式错误").css("color", "red")
+				} else {
+					$("#s").html("输入正确").css("color", "green")
+				}
+			})
+
+			function loadImg() {
+				//获取文件  
+				var file = $("#imgForm").find("input")[0].files[0];
+
+				//创建读取文件的对象  
+				var reader = new FileReader();
+
+				//创建文件读取相关的变量  
+				var imgFile;
+
+				//为文件读取成功设置事件  
+				reader.onload = function(e) {
+					/*alert('文件读取完成');*/
+					imgFile = e.target.result;
+					//						console.log(imgFile);
+					$("#imgContent").attr('src', imgFile);
+
+				};
+
+				//正式读取文件  
+				reader.readAsDataURL(file);
+
+			}
+		</script>
+	</body>
+
+</html>

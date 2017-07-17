@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  height: 0;
+  list-style: none; }
+
+html, body {
+  font-size: 62.5%; }
+
+.gm-img {
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 10%; }
+  .gm-img img {
+    width: 5rem;
+    height: 5rem; }
+  .gm-img p {
+    font-size: 0.8rem; }
+
+/*# sourceMappingURL=gaimichenggong.css.map */

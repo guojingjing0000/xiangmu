@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+html {
+  font-size: 62.5%;
+  font-family: 'microsoft yahei',Verdana,Arial,Helvetica,sans-serif; }
+  html a {
+    text-decoration: none; }
+
+.gz-dx-header {
+  width: 94%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  padding: 3%;
+  background: #45bff7;
+  color: white; }
+
+.gz-dx-nav {
+  width: 100%;
+  margin-top: -3px; }
+  .gz-dx-nav > img {
+    width: 100%; }
+
+.gz-dx-img {
+  width: 100%; }
+  .gz-dx-img > img {
+    width: 100%; }
+
+.gz-dx-div {
+  width: 100%;
+  display: flex;
+  padding: 4% 0;
+  border-bottom: 1px solid gainsboro; }
+  .gz-dx-div > p:nth-child(1) {
+    font-size: 0.8rem;
+    border-right: 1px solid gainsboro;
+    margin-left: 3%;
+    width: 20%; }
+  .gz-dx-div > p:nth-child(2) {
+    color: #A9A9A9;
+    font-size: 0.8rem;
+    padding-left: 3%;
+    width: 60%; }
+    .gz-dx-div > p:nth-child(2) > select {
+      width: 100%;
+      border: none;
+      background: white;
+      outline: none;
+      font-size: 0.8rem; }
+      .gz-dx-div > p:nth-child(2) > select > option {
+        border: none; }
+    .gz-dx-div > p:nth-child(2) input::-webkit-input-placeholder {
+      font-size: 0.8rem; }
+  .gz-dx-div > p:nth-child(3) {
+    width: 30%;
+    font-size: 0.6rem; }
+
+.gz-dx-btn {
+  margin-top: 5%;
+  width: 92%;
+  display: flex;
+  padding: 4%; }
+  .gz-dx-btn > div {
+    width: 40%;
+    margin: 0 3%;
+    background: #00A7EE;
+    padding: 2% 0;
+    text-align: center;
+    font-size: 0.8rem;
+    border-radius: 5px 5px 5px 5px; }
+    .gz-dx-btn > div > a {
+      color: white; }
+
+/*# sourceMappingURL=dixiaodengji.css.map */

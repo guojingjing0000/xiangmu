@@ -1,0 +1,259 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'microsoft yahei',Verdana,Arial,Helvetica,sans-serif;
+    a {
+        text-decoration: none;
+    }
+}
+.wrap {
+    width: 90%;
+    margin: 0 auto;
+}
+.gz-t-box2 {
+    min-height: 800px;
+    .gz-t-header {
+        width: 100%;
+        background: #42C3FF;
+        p {
+            @extend .wrap;
+            text-align: center;
+            line-height: 2.5rem;
+            color: #fff;
+            span:nth-child(1) {
+                font-size: 1rem;
+                float: left;
+                >a {
+                    color: white;
+                }
+            }
+            span:nth-child(2) {
+                font-size: 1rem;
+                display: inline-block;
+                text-align: center;
+            }
+        }
+    }
+    .gz-t-tw {
+        width: 100%;
+        font-size: 0.8rem;
+        >p:nth-child(1) {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+        >p:nth-child(2) {
+            line-height: 2rem;
+            text-align: right;
+            border-bottom: 10px solid #EFEFEF;
+            span {
+                margin-right: 10px;
+                img {
+                    max-width: 6%;
+                    vertical-align: middle;
+                }
+            }
+        }
+        >p:nth-child(3) {
+            line-height: 2.5rem;
+            width: 90%;
+            padding: 0 5%;
+            border-bottom: 2px solid #F0F0F0;
+            span:nth-child(1) {
+                margin-right: 10px;
+            }
+            span:nth-child(2) {
+                color: #999;
+                padding: 2px 10px;
+                border-left: 1px solid #e7e7e7;
+            }
+        }
+        .nav {
+            width: 100%;
+            display: flex;
+            line-height: 2.5rem;
+            border-bottom: 2px solid #e7e7e7;
+            span {
+                display: inline-block;
+                flex-grow: 1;
+                text-align: center;
+            }
+            span.active {
+                color: #5CCBFF;
+                border-bottom: 2px solid #5CCBFF;
+            }
+        }
+        // 切换的内容
+        .b {
+            display: none;
+        }
+        //个人信息
+        .gz-l-xx {
+            width: 100%;
+            p:nth-child(1) {
+                input:nth-child(1) {
+                    width: 50%;
+                    color: grey;
+                }
+                span:nth-child(2) {
+                    font-size: 0.6rem;
+                }
+            }
+            p {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                height: 2.5rem;
+                align-items: center;
+                border-bottom: 1px solid #e7e7e7;
+                >span {
+                    display: inline-block;
+                }
+                >span:nth-child(1) {
+                    width: 25%;
+                    text-align: right;
+                    padding: 1px 5px;
+                    margin-right: 5px;
+                    border-right: 1px solid #ccc;
+                }
+                >span:nth-child(2) {
+                    width: 72%;
+                    padding-right: 2%;
+//                  letter-spacing: 10px;
+                    input {
+                        line-height: 2.5rem;
+                        margin-right: 4px;
+                        border: none;
+                        outline: none;
+                        color: grey;
+                        font-size: 0.6rem;
+                    }
+                    span {
+                        float: right;
+                    }
+                }
+            }
+        }
+        //底部的提交按钮
+        .tjBtn {
+            width: 90%;
+            padding: 2rem 5%;
+            button {
+                line-height: 2.5rem;
+                width: 100%;
+                background: #00A6EF;
+                border: none;
+                border-radius: 2px;
+                color: #fff;
+            }
+        }
+    }
+    //家庭情况
+    .gz-l-xx2 {
+        width: 100%;
+        .gz-l-cy {
+            width: 100%;
+            border-bottom: 10px solid #EFEFEF;
+            p {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                height: 2.5rem;
+                align-items: center;
+                border-bottom: 2px solid #EFEFEF;
+                >span {
+                    display: inline-block;
+                }
+                >span:nth-child(1) {
+                    width: 25%;
+                    text-align: right;
+                    padding: 1px 5px;
+                    margin-right: 5px;
+                    border-right: 1px solid #ccc;
+                }
+                >span:nth-child(2) {
+                    width: 72%;
+                    padding-right: 1%;
+                    letter-spacing: 10px;
+                    input {
+                        line-height: 2rem;
+                        margin-right: 4px;
+                        border: none;
+                        width: 90%;
+                        outline: none;
+                        color: grey;
+                        font-size: 0.6rem;
+                    }
+                    span {
+                        float: right;
+                    }
+                }
+            }
+        }
+        .gz-l-cy:last-child {
+            border: none;
+        }
+    }
+    //申请原因
+    .gz-l-xx3 {
+        width: 100%;
+        p {
+            width: 90%;
+            padding: 10px 5%;
+            textarea {
+                width: 96%;
+                 font-size: 0.6rem;
+                min-height: 3rem;
+                color: grey;
+                border: 2px solid #e7e7e7;
+                padding: 6px 2%;
+              
+                outline: none;
+            }
+        }
+    }
+    //证明材料
+    .gz-l-xx4 {
+        p {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            text-align: center;
+            span {
+                line-height: 8rem;
+                display: inline-block;
+                width: 40%;
+                border: 1px solid #e7e7e7;
+                font-size: 1rem;
+                font-weight: bold;
+                color: #EFEFEF;
+                .addBorder {
+                    border: 1px solid #ccc;
+                }
+                #imgDiv {
+                    width: 100px;
+                    height: 100px;
+                }
+                #imgContent {
+                    width: 100%;
+                    height: 100%;
+                }
+                #imgForm {
+                    span {
+                        display: block;
+                        width: 100px;
+                        height: 100px;
+                        background: red;
+                    }
+                }
+            }
+        }
+    }
+}

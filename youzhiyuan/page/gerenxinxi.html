@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>个人信息</title>
+
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../css/gerenxinxi.css" />
+		<link rel="stylesheet" type="text/css" href="../css/FortAwesome/css/font-awesome.css" />
+		<script src="../js/rem.js"></script>
+	</head>
+
+	<body>
+
+		<div class="gz-gr-header">
+
+			<div>
+				<a href="../index.html#/zhongxin" style="color:white">&lt;</a>
+			</div>
+			<div>
+				<p>个人信息</p>
+			</div>
+			<div></div>
+		</div>
+		<div class="gz-gr-img">
+			<img src="../images/2017-06-14_104631.jpg" />
+		</div>
+
+		<div class="gz-gr-div1">
+			<div>
+				<p>
+					<div id="iframe-wrap">
+						<iframe src="../page/touxiang.html" frameborder="0" width="100%">
+			            </iframe>
+					</div>
+
+				</p>
+			</div>
+		</div>
+
+		<div class="gz-gr-div">
+			<p>姓名</p>
+			<p><input type="text" id="name" placeholder="请输入姓名" />
+			</p>
+			<p id="n">
+
+			</p>
+		</div>
+
+		<div class="gz-gr-div">
+			<p>邮箱</p>
+			<p><input type="text" id="email" placeholder="请填写您的个人邮箱地址" />
+			</p>
+			<p id="y"></p>
+		</div>
+
+		<div class="gz-gr-div">
+			<p>手机</p>
+			<p><input type="text" id="telphone" placeholder="请填写您的个人手机号" />
+			</p>
+			<p id="s"></p>
+		</div>
+
+		<div class="gz-gr-div">
+			<p>家庭主机</p>
+			<p><input type="text" id="telphone1" placeholder="请填写您的主机号码" /></p>
+			<p id="s1"></p>
+		</div>
+
+		<div class="gz-gr-div">
+			<p>移动电话</p>
+			<p><input type="text" id="telphone2" placeholder="请填写您的家庭号码" /></p>
+			<p id="s2"></p>
+		</div>
+
+		<div class="gz-gr-div">
+			<p>户口迁移</p>
+			<p><input type="text" class="bwk" placeholder="请填写户口是否迁移" /></p>
+			<p class="bk"></p>
+		</div>
+
+		<div class="gz-gr-div">
+			<p>党员关系</p>
+			<p><input type="text" class="bwk" placeholder="请填写你的政治面貌" /></p>
+			<p class="bk"></p>
+		</div>
+
+		<div class="gz-gr-div2">
+			<p>紧急联系人1</p>
+			<p><input type="text" id="telphone3" placeholder="请填写" /></p>
+			<p id="s3"></p>
+		</div>
+
+		<div class="gz-gr-div2">
+			<p>与当事人关系</p>
+			<p><input type="text" class="bwk" placeholder="与联系人1的关系" /></p>
+			<p class="bk"></p>
+		</div>
+		<div class="gz-gr-div2">
+			<p>紧急联系人2</p>
+			<p><input type="text" id="telphone4" placeholder="请填写" /></p>
+			<p id="s4"></p>
+		</div>
+		<div class="gz-gr-div2">
+			<p>与当事人关系</p>
+			<p ><input type="text"   class="bwk" placeholder="与联系人2的关系" /></p>
+			<p class="bk"></p>
+		</div>
+		<div class="gz-gr-div2">
+			<p>所在地址</p>
+			<p><input type="text" class="bwk" placeholder="填写住址" /></p>
+			<p class="bk"></p>
+		</div>
+		<div class="gz-gr-div2">
+			<p>详细地址</p>
+			<p><input type="text" class="bwk" placeholder="填写您的详细住址" /></p>
+			<p class="bk"></p>
+		</div>
+		<div class="gz-gr-btn">
+			<a href="susheyuding.html"   class="next">下一步</a>
+		</div>
+
+	</body>
+	<script src="../js/jquery.3.1.1.js"></script>
+
+	<script>
+		function loadImg() {
+			//获取文件  
+			var file = $("#imgForm").find("input")[0].files[0];
+
+			//创建读取文件的对象  
+			var reader = new FileReader();
+
+			//创建文件读取相关的变量  
+			var imgFile;
+
+			//为文件读取成功设置事件  
+			reader.onload = function(e) {
+				/*alert('文件读取完成');*/
+				imgFile = e.target.result;
+				console.log(imgFile);
+				$("#imgContent").attr('src', imgFile);
+			};
+
+			//正式读取文件  
+			reader.readAsDataURL(file);
+		}
+
+		//判断姓名
+
+		$("#name").blur(function() {
+				var reg = /^[\w]{8,16}$/g;
+				if($("#name").val() == "") {
+					$("#n").html("不能输入为空");
+
+				} else if(!reg.test($("#name").val())) {
+					$("#n").html("昵称格式错误").css("color", "red")
+				} else {
+					$("#n").html("昵称输入正确").css("color", "green")
+				}
+			})
+			//判断邮箱
+		$("#email").blur(function() {
+				var reg = /^\w+@\w+.[a-zA-Z]{2,3}(.[a-zA-Z]{2,3})?$/;
+				if($("#email").val() == "") {
+					$("#y").html("不能输入为空");
+
+				} else if(!reg.test($("#email").val())) {
+					$("#y").html("格式错误").css("color", "red")
+				} else {
+					$("#y").html("输入正确").css("color", "green")
+				}
+			})
+			//判断手机号
+		$("#telphone").blur(function() {
+			var reg = /^1\d{10}$/;
+			if($("#telphone").val() == "") {
+				$("#s").html("不能输入为空");
+
+			} else if(!reg.test($("#telphone").val())) {
+				$("#s").html("格式错误").css("color", "red")
+			} else {
+				$("#s").html("输入正确").css("color", "green")
+			}
+		})
+		$("#telphone1").blur(function() {
+			var reg = /^1\d{10}$/;
+			if($("#telphone1").val() == "") {
+				$("#s1").html("不能输入为空");
+
+			} else if(!reg.test($("#telphone1").val())) {
+				$("#s1").html("格式错误").css("color", "red")
+			} else {
+				$("#s1").html("输入正确").css("color", "green")
+			}
+		})
+		$("#telphone2").blur(function() {
+			var reg = /^1\d{10}$/;
+			if($("#telphone").val() == "") {
+				$("#s2").html("不能输入为空");
+
+			} else if(!reg.test($("#telphone2").val())) {
+				$("#s2").html("格式错误").css("color", "red")
+			} else {
+				$("#s2").html("输入正确").css("color", "green")
+			}
+		})
+		$("#telphone3").blur(function() {
+			var reg = /^1\d{10}$/;
+			if($("#telphone3").val() == "") {
+				$("#s3").html("不能输入为空");
+
+			} else if(!reg.test($("#telphone3").val())) {
+				$("#s3").html("格式错误").css("color", "red")
+			} else {
+				$("#s3").html("输入正确").css("color", "green")
+			}
+		})
+		$("#telphone4").blur(function() {
+			var reg = /^1\d{10}$/;
+			if($("#telphone4").val() == "") {
+				$("#s4").html("不能输入为空");
+
+			} else if(!reg.test($("#telphone4").val())) {
+				$("#s4").html("格式错误").css("color", "red")
+			} else {
+				$("#s4").html("输入正确").css("color", "green")
+			}
+		})
+
+				$(".next").click(()=>{
+				if($("input").val()==""){
+					alert("不能为空，请输入相应信息");
+					
+					return false;
+				}
+				})
+	
+		
+	</script>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Title</title>
+		<link rel="stylesheet" href="../css/FortAwesome/css/font-awesome.css">
+		<link rel="stylesheet" href="../css/woyaotiwen.css">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<script type="text/javascript" src="../js/rem.js"></script>
+	</head>
+
+	<body>
+		<div class="lw-div1">
+			<div>
+				<a href="../index.html#/zixun" style="text-decoration: none;color: white;"> &lt; </a>
+			</div>
+			<div>
+				<p>我要提问</p>
+			</div>
+			<div></div>
+		</div>
+		<div class="lw-div2">
+			<img src="../images/self-report.png" alt="">
+		</div>
+
+		<div class="wary">
+			<ul class="add">
+				<li>姓名:<input type="text"></li>
+				<li>内容:<textarea></textarea></li>
+				<li><input type="button" value="提交"></li>
+			</ul>
+
+		</div>
+
+	</body>
+	<script src="../js/jquery.3.1.1.js"></script>
+	<script>
+		var $name = $("input[type=text]");
+		var $txt = $("textarea");
+		var $bnt = $("input[type=button]");
+		// console.log($bnt)
+		$bnt.click(function() {
+			if($("input[type=text]").val() == "" || $("textarea").val() == "") {
+				alert("请输入完整的信息")
+			} else {
+				alert("提交成功");
+				$("input[type=text]").val() == "123";
+				$("textarea").val() == "";
+			}
+
+		});
+		/*$(".del").click(function(){
+			$(".con").empty();
+		})*/
+	</script>
+
+</html>

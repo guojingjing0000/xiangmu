@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  height: 0;
+  list-style: none; }
+
+html, body {
+  font-size: 62.5%; }
+
+.tj-img {
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 10%; }
+  .tj-img img {
+    width: 5rem;
+    height: 5rem; }
+  .tj-img p {
+    font-size: 0.8rem; }
+
+/*# sourceMappingURL=tijiaochenggong.css.map */

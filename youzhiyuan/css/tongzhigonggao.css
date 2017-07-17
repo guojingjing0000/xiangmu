@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+html {
+  font-size: 62.5%;
+  font-family: 'microsoft yahei',Verdana,Arial,Helvetica,sans-serif; }
+
+.lt-div1 {
+  width: 94%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  padding: 3%;
+  background: #45bff7;
+  color: white; }
+
+.lt-div2 {
+  width: 100%; }
+  .lt-div2 > img {
+    width: 100%; }
+
+.lt-div3 {
+  padding: 2% 4%; }
+  .lt-div3 > ul {
+    background: #fff;
+    font-size: 0.8rem;
+    line-height: 65px; }
+    .lt-div3 > ul a {
+      text-decoration: none;
+      cursor: pointer;
+      color: #666;
+      display: block; }
+      .lt-div3 > ul a > li {
+        margin-bottom: 2%; }
+        .lt-div3 > ul a > li > div {
+          width: 100%;
+          display: flex;
+          justify-content: space-around; }
+          .lt-div3 > ul a > li > div > span {
+            text-align: right; }
+
+/*# sourceMappingURL=tongzhigonggao.css.map */

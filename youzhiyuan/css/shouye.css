@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+html {
+  font-family: 'microsoft yahei',Verdana,Arial,Helvetica,sans-serif;
+  font-size: 62.5%; }
+
+.ls-div1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background: #45bff7;
+  font-size: 1rem;
+  color: white; }
+  .ls-div1 div {
+    padding: 2.5% 0; }
+
+.ls-div2 {
+  width: 100%; }
+  .ls-div2 > img {
+    width: 100%; }
+
+.ls-div3 {
+  width: 100%; }
+  .ls-div3 > ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap; }
+    .ls-div3 > ul > li {
+      margin-bottom: 2%;
+      width: 25%; }
+      .ls-div3 > ul > li a {
+        text-decoration: none;
+        color: #000; }
+        .ls-div3 > ul > li a p {
+          font-size: 0.8rem;
+          font-weight: 500; }
+        .ls-div3 > ul > li a img {
+          width: 70%; }
+
+.ls-div4 {
+  width: 100%;
+  font-size: 0.9rem;
+  margin: 7% 0; }
+  .ls-div4 > div:nth-child(1) {
+    width: 100%;
+    border-bottom: 1px solid #dcdcdc; }
+    .ls-div4 > div:nth-child(1) p {
+      width: 20%;
+      text-align: center;
+      border-left: 10px solid #45bff7;
+      margin-bottom: 2%; }
+  .ls-div4 > div:nth-child(2) {
+    width: 94%;
+    margin: 3% 2%;
+    display: flex; }
+    .ls-div4 > div:nth-child(2) > div:nth-child(1) {
+      width: 40%; }
+      .ls-div4 > div:nth-child(2) > div:nth-child(1) > img {
+        width: 93%; }
+    .ls-div4 > div:nth-child(2) > div:nth-child(2) {
+      width: 58%;
+      font-size: 0.8rem; }
+
+.ls-div5 {
+  width: 100%;
+  font-size: 0.9rem;
+  margin: 7% 0; }
+  .ls-div5 > div:nth-child(1) {
+    width: 100%;
+    border-bottom: 1px solid #dcdcdc; }
+    .ls-div5 > div:nth-child(1) p {
+      width: 20%;
+      text-align: center;
+      border-left: 10px solid #45bff7;
+      margin-bottom: 2%; }
+  .ls-div5 > div:nth-child(2) {
+    width: 94%;
+    margin: 3% 2%;
+    display: flex; }
+    .ls-div5 > div:nth-child(2) > div:nth-child(1) {
+      width: 40%; }
+      .ls-div5 > div:nth-child(2) > div:nth-child(1) > img {
+        width: 93%; }
+    .ls-div5 > div:nth-child(2) > div:nth-child(2) {
+      width: 58%;
+      font-size: 0.8rem; }
+      .ls-div5 > div:nth-child(2) > div:nth-child(2) > span {
+        color: #ccc; }
+
+.ls-div6 {
+  width: 100%;
+  font-size: 0.15rem;
+  margin: 7% 0;
+  border-top: 1px solid #dcdcdc; }
+  .ls-div6 > div:nth-child(1) {
+    width: 94%;
+    margin: 3% 2%;
+    display: flex; }
+    .ls-div6 > div:nth-child(1) > div:nth-child(1) {
+      width: 40%; }
+      .ls-div6 > div:nth-child(1) > div:nth-child(1) > img {
+        width: 93%; }
+    .ls-div6 > div:nth-child(1) > div:nth-child(2) {
+      width: 58%;
+      font-size: 0.8rem; }
+      .ls-div6 > div:nth-child(1) > div:nth-child(2) > span {
+        color: #ccc; }
+
+/*# sourceMappingURL=shouye.css.map */

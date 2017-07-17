@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+
+		<meta charset="UTF-8">
+		<title>成功</title>
+		<meta http-equiv="refresh" content="5;URL=../index.html" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../css/tijiaochenggong.css" />
+		<link rel="stylesheet" type="text/css" href="../css/FortAwesome/css/font-awesome.css" />
+		<script type="text/javascript"  src="../js/rem.js"></script>
+		
+	</head>
+
+	<body>
+
+		<div class="tj-img">
+			<img src="../images/que2.png" />
+
+			<p id="p">提交成功</p>
+
+		</div>
+	</body>
+	<script src="../js/jquery.3.1.1.js"></script>
+	<script>
+		var num = 5;
+		name = setInterval(function() {
+			$("#p").html(num + "秒后返回"); // 你倒计时显示的地方元素
+
+			num--;
+			if(num == -1) {
+				clearInterval(name);
+
+			}
+		}, 1000);
+	</script>
+
+</html>

@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+html {
+  font-size: 62.5%;
+  font-family: 'microsoft yahei',Verdana,Arial,Helvetica,sans-serif; }
+  html a {
+    text-decoration: none;
+    color: black; }
+
+.gz-header {
+  width: 100%; }
+  .gz-header > img {
+    width: 100%; }
+
+.gz-xian {
+  width: 100%;
+  margin-top: -3px;
+  padding: 0.5% 0 71%;
+  background: #eeeeee; }
+  .gz-xian > ul:nth-child(1) {
+    margin: 2% 0;
+    width: 100%;
+    background: white; }
+    .gz-xian > ul:nth-child(1) > li {
+      width: 92%;
+      padding: 3% 4%; }
+      .gz-xian > ul:nth-child(1) > li > a {
+        width: 100%; }
+        .gz-xian > ul:nth-child(1) > li > a > span:nth-child(1) {
+          width: 10%; }
+          .gz-xian > ul:nth-child(1) > li > a > span:nth-child(1) > i {
+            width: 10%;
+            text-align: center; }
+        .gz-xian > ul:nth-child(1) > li > a > span:nth-child(2) {
+          width: 85%;
+          padding-left: 5%;
+          font-size: 0.8rem; }
+  .gz-xian > ul:nth-child(2),
+  .gz-xian > ul:nth-child(4) {
+    margin-top: 2%;
+    width: 100%;
+    background: white; }
+    .gz-xian > ul:nth-child(2) > li,
+    .gz-xian > ul:nth-child(4) > li {
+      width: 92%;
+      padding: 3% 4%; }
+      .gz-xian > ul:nth-child(2) > li > a,
+      .gz-xian > ul:nth-child(4) > li > a {
+        width: 100%; }
+        .gz-xian > ul:nth-child(2) > li > a > span:nth-child(1),
+        .gz-xian > ul:nth-child(4) > li > a > span:nth-child(1) {
+          width: 10%; }
+          .gz-xian > ul:nth-child(2) > li > a > span:nth-child(1) > i,
+          .gz-xian > ul:nth-child(4) > li > a > span:nth-child(1) > i {
+            width: 10%;
+            text-align: center; }
+        .gz-xian > ul:nth-child(2) > li > a > span:nth-child(2),
+        .gz-xian > ul:nth-child(4) > li > a > span:nth-child(2) {
+          width: 65%;
+          padding-left: 5%;
+          font-size: 0.8rem; }
+        .gz-xian > ul:nth-child(2) > li > a > span:nth-child(3),
+        .gz-xian > ul:nth-child(4) > li > a > span:nth-child(3) {
+          width: 20%;
+          margin-left: 50%;
+          font-size: 0.8rem;
+          text-align: center;
+          color: darkgray; }
+  .gz-xian > ul:nth-child(3),
+  .gz-xian > ul:nth-child(5) {
+    border-top: 1px solid darkgray;
+    width: 100%;
+    background: white; }
+    .gz-xian > ul:nth-child(3) > li,
+    .gz-xian > ul:nth-child(5) > li {
+      width: 92%;
+      padding: 3% 4%; }
+      .gz-xian > ul:nth-child(3) > li > a,
+      .gz-xian > ul:nth-child(5) > li > a {
+        width: 100%; }
+        .gz-xian > ul:nth-child(3) > li > a > span:nth-child(1),
+        .gz-xian > ul:nth-child(5) > li > a > span:nth-child(1) {
+          width: 10%; }
+          .gz-xian > ul:nth-child(3) > li > a > span:nth-child(1) > i,
+          .gz-xian > ul:nth-child(5) > li > a > span:nth-child(1) > i {
+            width: 10%;
+            text-align: center; }
+        .gz-xian > ul:nth-child(3) > li > a > span:nth-child(2),
+        .gz-xian > ul:nth-child(5) > li > a > span:nth-child(2) {
+          width: 85%;
+          padding-left: 5%;
+          font-size: 0.8rem; }
+        .gz-xian > ul:nth-child(3) > li > a > span:nth-child(3),
+        .gz-xian > ul:nth-child(5) > li > a > span:nth-child(3) {
+          width: 20%;
+          margin-left: 50%;
+          font-size: 0.8rem;
+          text-align: center;
+          color: darkgray; }
+
+/*# sourceMappingURL=zizhuruxue.css.map */

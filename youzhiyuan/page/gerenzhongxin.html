@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="../css/FortAwesome/css/font-awesome.css" />
+		<script src="../js/jquery.3.1.1.js"></script>
+		<link rel="stylesheet" href="../css/gerenzhongxin.css" />
+		<script type="text/javascript"  src="../js/rem.js"></script>
+		
+	</head>
+
+	<body>
+
+		<div class="gz-zx-header">
+			<div>
+				<img src="images/13_看图王.jpg"   />
+				<!--<p>您还没有填写信息哦</p>-->
+			</div>
+
+			<div>
+				&gt;
+			</div>
+		</div>
+		<div class="gz-zx-xian">
+			<ul>
+				<li>
+					<a href="page/gerenxinxi.html">
+						<span><i class="fa fa-user   " style="color:#10AEFF" aria-hidden="true" ></i></span>
+						<span>个人信息</span>
+						<span>></span>
+					</a>
+				</li>
+			</ul>
+
+			<ul>
+				<li>
+					<a href="page/xiugaimima.html">
+						<span><i class="fa fa-file " style="color:#FFC000" aria-hidden="true" ></i></span>
+						<span>修改密码</span>
+						<span>></span>
+					</a>
+				</li>
+			</ul>
+
+			<ul>
+				<li class="gz-tc">
+
+					<div id="aa">
+						<span><i class="fa fa-power-off   " style="color:#4CD127" aria-hidden="true" ></i></span>
+						<span>退出</span>
+						<span></span>
+						<div class="gz-qdtc">
+
+							<div class="gz-bw">
+								<div class="gz-con">
+									<h2>退出</h2>
+
+									<p><span><a  href="#/shouye">确认</a></span><span class="qx">取消</span></p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+	</body>
+
+	<script>
+		$(function() {
+			$(".gz-tc #aa").click(function() {
+				$(this).children(".gz-qdtc").stop().slideToggle();
+			})
+			$(".gz-con .qx").click(function() {
+				$(this).children(".gz-qdtc").stop().slideToggle();
+			})
+		})
+	</script>
+
+</html>

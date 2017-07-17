@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+html {
+  font-size: 62.5%;
+  font-family: 'microsoft yahei',Verdana,Arial,Helvetica,sans-serif; }
+
+.lx-div1 {
+  width: 94%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  padding: 3%;
+  background: #45bff7;
+  color: white; }
+
+.lx-div2 {
+  width: 100%; }
+  .lx-div2 ul > li {
+    padding: 2% 4%;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.8rem; }
+    .lx-div2 ul > li > input {
+      width: 70%;
+      height: 35px;
+      vertical-align: middle;
+      line-height: 35px;
+      border: none;
+      font-size: 0.6rem;
+      padding-left: 3%;
+      outline: none; }
+    .lx-div2 ul > li > span {
+      width: 30%; }
+
+.lx-div3 {
+  width: 80%;
+  margin: 10% 10%; }
+  .lx-div3 > a {
+    display: block;
+    margin: 1.35rem 0 0.32rem;
+    border: 1px solid #00A7EE;
+    border-radius: 5px;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    font-size: 0.8rem;
+    background: #00A7EE;
+    color: #fff;
+    text-decoration: none; }
+
+/*# sourceMappingURL=xiugaimima.css.map */
